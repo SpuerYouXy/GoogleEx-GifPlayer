@@ -1,0 +1,16 @@
+{
+"manifest_version": 2,
+"name": "GifPlayer",
+"description": "A player that can play gif or pauses",
+"version": "1.0",
+"permissions": ["contextMenus"],   
+"background": {   
+"scripts": ["background.js"]   
+}, 
+"content_scripts":[
+{
+ "matches": ["*://*/*"],
+ "js":["libgif.js","rubbable.js","main.js"]
+}
+]
+}
